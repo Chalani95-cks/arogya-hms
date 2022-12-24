@@ -1,0 +1,144 @@
+-
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #32cd32;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:#f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+<h2>HMS</h2>
+<h2>MAIN NAVIGATION</h2>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Dashboard</a>
+  <a href="#">Appointmemt History</a>
+  
+    <a class="dropdown-btn">Patient
+    <i class="fa fa-caret-down"></i>
+  </a>
+  <div class="dropdown-container">
+    <a href="#">Add patient</a>
+    <a href="#">Manage patient</a>
+    
+  </div>
+ 
+  <a href="#">Search</a>
+</div>
+
+<div id="main">
+  <h2>Arogya Hospital</h2>
+  <p></p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+   <div id="main">
+      <h2>Arogya Hospital</h2>
+    
+      <h2>Patient / Add patient</h2>
+<h3>Add Patient</h3>
+
+<form action ="/add patient.php" method="post">
+  <fieldset>
+  <label for="fname">Patient name</label><br>
+  <input type="text" id="fname" name="fname" value="-Enter patient Name-"><br><br>
+  <label for="lname">Patient contact No </label><br>
+  <input type="text" id="lname" name="lname" value="-Enter patient contact number-"><br><br>
+  <label for="lname">Patient Email</label><br>
+  <input type="text" id="lname" name="lname" value="Enter patient email id"><br><br>
+  <label for="lname">Gender</label><br>
+  <input type="radio" id="male" name="fav_language" value="male">
+  <label for="html">Male</label><br>
+  <input type="radio" id="Female" name="fav_language" value="Female">
+  <label for="css">Female</label><br><br>
+  <label for="lname">Patient Address</label><br>
+  <input type="text" id="lname" name="lname" value="Enter patient Address"><br><br>
+  <label for="lname">Patient Age</label><br>
+  <input type="text" id="lname" name="lname" value="Enter patient age"><br><br>
+  <label for="lname">Medical History</label><br>
+  <input type="text" id="lname" name="lname" value="Enter medical History (if any)"><br><br>
+
+  <input type="submit" value="Add">
+</fieldset>
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+    </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</script>
+
+   
+</body>
+</html> 

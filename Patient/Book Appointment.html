@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Arogya Hospital Magement System | Apex Design Works.com</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />  
+      <title>Book Appointmemt</title>    
+       
+      <link rel="stylesheet" type="text/css" href="css.css">  
+      <style>
+
+        body {
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #32cd32;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color:#f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>  
+  </head>   
+<body>
+  <div id="mySidenav" class="sidenav">
+    <h2>HMS</h2>
+    <h2>MAIN NAVIGATION</h2>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="User Dashboard.html">Dashboard</a>
+      <a href="Book Appointment.html">Book Appointment</a>
+      <a href="Appointment history.html">Appointmemt History</a>
+      <a href="Medical History.html">Medical History</a>
+    </div>
+    
+    <div id="main">
+      <h2>Arogya Hospital</h2>
+      <p></p>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <h2>User/Appointment</h2>
+      <h3>Book Appointment</h3>
+      
+      <form action="/action_page.php">
+        <label for="fname">Doctor Specialization</label><br>
+        <input type="text" id="fname" name="fname" value="-Select Specialization-"><br><br>
+        <label for="lname">Doctors</label><br>
+        <input type="text" id="lname" name="lname" value="-Select Doctor-"><br><br>
+        <label for="lname">Consultancy Fee</label><br>
+        <input type="text" id="lname" name="lname" value="0000"><br><br>
+        <label for="lname">Date</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <label for="lname">Time</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+
+
+
+
+</body>
+</html>
